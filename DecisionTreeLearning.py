@@ -13,17 +13,17 @@ from pprint import pprint
 
 import pandas as pd
 
-file_attr = input("Enter file name of the attribute description: ")             # 'ids-attr.txt'
+file_attr = 'Data/' + str(input("Enter file name of the attribute description: "))# 'ids-attr.txt'
 df_attr = pd.read_csv(file_attr, delimiter = ' ')
 df_attr = df_attr.transpose()
 header = list(df_attr.index[[0]])
 header = header+(list(df_attr.iloc[0]))                                         # getting attribute names from 'ids-attr.txt'
 
-file_train = input("Enter file name of the training set: ")                     # 'ids-train.txt'
+file_train = 'Data/' + str(input("Enter file name of the training set: "))      # 'ids-train.txt'
 dataset = pd.read_csv(file_train, names = header, delimiter = ' ')
 class_name = header[len(header)-1]                                              #'class'
 
-file_test = input("Enter file name of the test set: ")                          # 'ids-test.txt'
+file_test = 'Data/' + str(input("Enter file name of the test set: "))           # 'ids-test.txt'
 
 
 
