@@ -10,7 +10,6 @@ from functions import *
 def main():
     # importing necessary packages
     from pprint import pprint
-    
     import pandas as pd
     
     file_attr = 'Data/' + str(input("Enter file name of the attribute description: "))# 'ids-attr.txt'
@@ -24,11 +23,7 @@ def main():
     class_name = header[len(header)-1]                                              #'class'
     
     file_test = 'Data/' + str(input("Enter file name of the test set: "))           # 'ids-test.txt'
-    
-                                      
-    
-    
-    
+                             
     choice = input('Select an output you wish to see: \n1. Train data set \n2. Test data set \n\nEnter 1 or 2:  ')
     if choice == 1:
         train_data, test_data = functions.train_test_split(dataset)                           # calling train_test_split (optional)

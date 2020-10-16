@@ -9,10 +9,6 @@ import pandas as pd
 from math import log2
 
 class functions:
-    
-#    def __init__(self, class_name, ):
-#        self.class_name = class_name
-#        #self.tricks = [] 
         
     ##############################################################################################
     # Function: Entropy
